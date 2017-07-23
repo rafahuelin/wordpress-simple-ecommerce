@@ -1,5 +1,5 @@
 <?php
-
+    require_once('widgets/class-wp-widget-categories.php');
     // Theme Support
     function ec_theme_setup() {
         add_theme_support('custom-logo');
@@ -34,3 +34,10 @@
     }
 
     add_action('widgets_init', 'ec_init_widgets');
+
+    // Register Widgets
+    function ec_register_widgets() {
+        register_widget('WP_Widget_Categories_Custom');
+    }
+
+    add_action('widgets_init', 'ec_register_widgets');
