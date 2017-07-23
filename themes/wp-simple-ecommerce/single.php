@@ -23,6 +23,7 @@
                                 <?php if(function_exists('the_tags')) { ?><strong>Tags: </strong><?php the_tags('', ', ', ''); ?><br /><?php } ?>
                             <?php endif; ?>
                         </div>
+                        <?php comments_template(); ?>
                     </div>
                 <?php endwhile; ?>
             <?php endif; ?>
