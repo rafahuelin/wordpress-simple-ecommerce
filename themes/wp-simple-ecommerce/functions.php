@@ -4,6 +4,9 @@
     function ec_theme_setup() {
         add_theme_support('custom-logo');
 
+        // Featured Image Support
+        add_theme_support('post-thumbnails');
+
         // Nav Menus
         register_nav_menus(array(
             'primary' => __('Primary Menu')
