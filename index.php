@@ -13,7 +13,11 @@
 <div class="grid-container">
     <header class="grid-x grid-padding-x">
         <div class="large-6 cell">
-            <img src="./img/logo.jpg">
+            <?php
+                if(function_exists('the_custom_logo')) {
+                    the_custom_logo();
+                }
+            ?>
         </div>
         <div class="large-6 cell">
             <ul class="menu simple main-nav">
