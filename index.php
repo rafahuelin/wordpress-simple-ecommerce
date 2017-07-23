@@ -20,11 +20,10 @@
             ?>
         </div>
         <div class="large-6 cell">
-            <ul class="menu simple main-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="index.html">Services</a></li>
-            </ul>
+            <?php wp_nav_menu(array(
+                'theme_location' => 'primary',
+                'container_class' => 'menu simple main-nav'
+            )); ?>
         </div>
     </header>
 
